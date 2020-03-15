@@ -28,9 +28,27 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Provide configuration via the environment
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
+# Structured HTML templates
+gem 'slim-rails'
+
+# User authentication
+gem 'clearance'
+
+# Form builder
+gem 'simple_form'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  # A better IRB
+  gem 'pry-rails'
+  # Generate fake data for tests
+  gem 'faker'
+  gem 'factory_bot_rails'
 end
 
 group :development do
