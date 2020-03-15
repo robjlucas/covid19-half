@@ -1,0 +1,15 @@
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/bootsnap-1.4.6/ext/bootsnap
+/Users/roblucas/.rbenv/versions/2.6.5/bin/ruby -I /Users/roblucas/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20200315-4838-10r9en2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20200315-4838-ifc4t/bootsnap

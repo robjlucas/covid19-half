@@ -1,0 +1,19 @@
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/byebug-11.1.1/ext/byebug
+/Users/roblucas/.rbenv/versions/2.6.5/bin/ruby -I /Users/roblucas/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20200315-4838-kwrw9p.rb extconf.rb
+creating Makefile
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 byebug.bundle ./.gem.20200315-4838-1tgt99j/byebug

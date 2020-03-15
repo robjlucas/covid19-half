@@ -1,0 +1,15 @@
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+/Users/roblucas/.rbenv/versions/2.6.5/bin/ruby -I /Users/roblucas/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20200315-4838-1f08uw4.rb extconf.rb
+creating Makefile
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/roblucas/Sites/covid19-half/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20200315-4838-1xng3vp
