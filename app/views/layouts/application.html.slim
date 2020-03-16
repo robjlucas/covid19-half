@@ -8,6 +8,16 @@ html
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   body
+    ul
+      li = link_to "Home", page_path(page: "home")
+      li = link_to "About", page_path(page: "about")
+      - if signed_in?
+        li = link_to edit_user_path(current_user) do
+          ' Your account
+      - else
+        li = link_to sign_in_path, id: "menu-account-link" do
+          ' Log in
+
     #flash
       - flash.each do |key, value|
         .flash.key class=(key)

@@ -2,6 +2,9 @@
 #
 #                                Prefix Verb   URI Pattern                                                                              Controller#Action
 #                                  page GET    /pages/:page(.:format)                                                                   pages#show
+#                             edit_user GET    /users/:id/edit(.:format)                                                                users#edit
+#                                  user PATCH  /users/:id(.:format)                                                                     users#update
+#                                       PUT    /users/:id(.:format)                                                                     users#update
 #                                  root GET    /                                                                                        pages#show {:page=>"home"}
 #                             passwords POST   /passwords(.:format)                                                                     clearance/passwords#create
 #                          new_password GET    /passwords/new(.:format)                                                                 clearance/passwords#new
@@ -37,6 +40,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   resources :pages, only: [:show], param: :page
+  resources :users, only: [:create, :edit, :update]
 
   root to: "pages#show", page: "home"
 end
