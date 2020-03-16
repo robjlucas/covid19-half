@@ -52,6 +52,8 @@ group :development, :test do
 end
 
 group :development do
+  # Annotate models with database columns
+  gem "annotate", git: "https://github.com/ctran/annotate_models.git", branch: "develop"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'

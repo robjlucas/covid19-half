@@ -1,0 +1,10 @@
+.edit.user
+  h1 Edit user
+
+  = simple_form_for current_user, url: user_path(id: current_user.id), method: :patch do |f|
+    = f.input :email
+    = f.input :password
+    = f.button :submit, "Update account"
+
+  = button_to sign_out_path, method: :delete do
+    ' Log out
