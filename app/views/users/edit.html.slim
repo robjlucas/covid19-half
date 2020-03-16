@@ -1,10 +1,12 @@
-.edit.user
-  h1 Edit user
+.edit.user.container
+  h1.py-5.text-center.display-4 Your Account
 
-  = simple_form_for current_user, url: user_path(id: current_user.id), method: :patch do |f|
-    = f.input :email
-    = f.input :password
-    = f.button :submit, "Update account"
+  div.card
+    div.card-body.bg-light
+      = simple_form_for current_user, url: user_path(id: current_user.id), method: :patch do |f|
+        = f.input :email
+        = f.input :password
+        = f.button :submit, "Update account", class: 'btn-secondary mr-3'
 
-  = button_to sign_out_path, method: :delete do
-    ' Log out
+        = button_to sign_out_path, class: 'btn btn-primary', method: :delete do
+          ' Log out
