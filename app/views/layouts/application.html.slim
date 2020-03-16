@@ -13,6 +13,7 @@ html
     ul class="nav justify-content-center"
       li class="nav-item" = link_to "Home", page_path(page: "home"), class: 'nav-link text-light'
       li class="nav-item" = link_to "About", page_path(page: "about"), class: 'nav-link text-light'
+      li class="nav-item" = link_to "Staying safe", page_path(page: "safety"), class: 'nav-link text-light'
       - if signed_in?
         li class="nav-item" = link_to edit_user_path(current_user), class: 'nav-link text-light' do
           ' Your account
