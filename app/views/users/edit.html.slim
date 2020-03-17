@@ -1,8 +1,8 @@
 .edit.user.container
   h1.py-5.text-center.display-4 Your Account
 
-  div.card
-    div.card-body.bg-light
+  div.card.bg-light
+    div.card-body
       = simple_form_for current_user, url: user_path(id: current_user.id), method: :patch do |f|
         = f.input :email
         = f.input :password
