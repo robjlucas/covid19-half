@@ -42,5 +42,7 @@ Rails.application.routes.draw do
   resources :pages, only: [:show], param: :page
   resources :users, only: [:create, :edit, :update]
 
+  get "/.well-known/acme-challenge/:id" => "pages#letsencrypt"
+
   root to: "pages#show", page: "home"
 end
