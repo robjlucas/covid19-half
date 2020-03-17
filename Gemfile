@@ -34,6 +34,12 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 # Structured HTML templates
 gem 'slim-rails'
 
+# Use the officially supported AWS-SDK library for S3 storage
+gem 'carrierwave-aws'
+
+# Parse and write CSVs
+gem 'csv'
+
 # User authentication
 gem 'clearance'
 
@@ -52,8 +58,6 @@ group :development, :test do
 end
 
 group :development do
-  # Annotate models with database columns
-  gem "annotate", git: "https://github.com/ctran/annotate_models.git", branch: "develop"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
