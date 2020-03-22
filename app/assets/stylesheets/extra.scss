@@ -1,7 +1,21 @@
 body {
     height: 100vh;
-    background: url('http://dept2.co/img/deserted_track_country.jpg') center / cover repeat-y;
     font-size: 1.2rem !important;
+    &.opt1 {
+        background: url('http://dept2.co/img/deserted_track_country.jpg') center / cover repeat-y;
+    }
+    &.opt2 {
+        background: url('http://dept2.co/img/lone_runner_blue.jpg') center / cover repeat-y;
+        & h1, h2 {
+            font-family: 'Faster One', sans-serif;
+        }
+    }
+    &.opt3 {
+        background: url('http://dept2.co/img/lone_runner_urban.jpg') center / cover repeat-y;
+        & h1, h2 {
+            font-family: 'Contrail One', sans-serif;
+        }
+    }
 }
 .page, .user {
     .bg-light {

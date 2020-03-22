@@ -2,23 +2,24 @@ doctype html
 html
   head
     meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'
-    link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet"
+    link href="https://fonts.googleapis.com/css?family=Contrail+One|Faster+One|Shrikhand&display=swap" rel="stylesheet"
     title Coronavirus Self-Isolation Half Marathon
     = csrf_meta_tags
     = csp_meta_tag
     
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  body
-    ul class="nav justify-content-center"
-      li class="nav-item" = link_to "Home", page_path(page: "home"), class: 'nav-link text-light'
-      li class="nav-item" = link_to "About", page_path(page: "about"), class: 'nav-link text-light'
-      li class="nav-item" = link_to "Staying safe", page_path(page: "safety"), class: 'nav-link text-light'
+
+  body#body.opt1
+    ul.nav.justify-content-center
+      li.nav-item = link_to "Home", page_path(page: "home"), class: 'nav-link text-light'
+      li.nav-item = link_to "About", page_path(page: "about"), class: 'nav-link text-light'
+      li.nav-item = link_to "staying safe", page_path(page: "safety"), class: 'nav-link text-light'
       - if signed_in?
-        li class="nav-item" = link_to edit_user_path(current_user), class: 'nav-link text-light' do
+        li.nav-item = link_to edit_user_path(current_user), class: 'nav-link text-light' do
           ' Your account
       - else
-        li class="nav-item" = link_to sign_in_path, id: "menu-account-link", class: 'nav-link text-light' do
+        li.nav-item = link_to sign_in_path, id: "menu-account-link", class: 'nav-link text-light' do
           ' Log in
 
     #flash
