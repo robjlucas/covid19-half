@@ -9,10 +9,12 @@ html
     
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
   body#body.opt1
     ul.nav.justify-content-center
       li.nav-item = link_to "Home", page_path(page: "home"), class: 'nav-link text-light'
       li.nav-item = link_to "About", page_path(page: "about"), class: 'nav-link text-light'
+      li.nav-item = link_to "staying safe", page_path(page: "safety"), class: 'nav-link text-light'
       - if signed_in?
         li.nav-item = link_to edit_user_path(current_user), class: 'nav-link text-light' do
           ' Your account
