@@ -61,6 +61,12 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "covid19_half_production"
 
   config.action_mailer.perform_caching = false
+  config.action_mailer.smtp_settings = {
+    address: ENV.fetch("SMTP_HOSTNAME"),
+    port: ENV.fetch("SMTP_PORT"),
+    user_name: ENV.fetch("SMTP_USERNAME"),
+    password: ENV.fetch("SMTP_PASSWORD")
+  }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
